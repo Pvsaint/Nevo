@@ -29,8 +29,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Nevo",
-  description: "Decentralized Donation Pools on Stellar",
+  title: "Nevo - Decentralized Donation Pools on Stellar",
+  description:
+    "Nevo is a decentralized platform that reimagines charitable giving through blockchain technology. Create transparent donation pools, accept multiple assets, and let idle funds generate yields while maintaining complete control over disbursements",
   keywords: [
     "decentralized security",
     "nevo",
@@ -45,6 +46,7 @@ export const metadata: Metadata = {
     "pools",
     "crypto payment",
   ],
+  authors: [{ name: "Nevo" }],
   openGraph: {
     title: "Nevo - Decentralized Donation Pools on Stellar",
     description:
@@ -70,7 +72,11 @@ export const metadata: Metadata = {
     images: ["https://nevo.app/logo.jpeg"],
     creator: "@nevoapp",
   },
-
+  robots: {
+    index: true,
+    follow: true,
+  },
+  metadataBase: new URL("https://nevo.app"),
   icons: {
     icon: [
       { url: "/Group 1.svg" },
